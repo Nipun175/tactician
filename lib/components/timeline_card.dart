@@ -21,7 +21,7 @@ class TimelineCard extends StatelessWidget {
   Widget build(BuildContext context) {
     var cardwidth = size.width * 0.6;
     var cardheight = size.height * 0.2;
-    print(image);
+    // print(image);
     if (image == "") {
       image = null;
     }
