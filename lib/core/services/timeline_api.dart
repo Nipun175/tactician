@@ -5,7 +5,7 @@ import 'dart:convert';
 
 class GetTimeline {
   final timelineDataJson =
-      'https://tanishq5414.github.io/tacticianapi/flutterroadmap.json';
+      'https://tanishq5414.github.io/tacticianapi/timelinedata.json';
   Future<List<Timeline>> getTimeline() async {
     final roadmapData = await http.get(Uri.parse(timelineDataJson));
     if (roadmapData.statusCode == 200) {
