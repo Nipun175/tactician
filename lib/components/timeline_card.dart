@@ -97,7 +97,7 @@ class TimelineCard extends StatelessWidget {
                                   ),
                                 ),
                                 onPressed: () {
-                                  Navigator.pushNamed(context, '/courseview');
+                                  // Navigator.pushNamed(context, '/courseview');
                                 },
                                 child: Padding(
                                   padding: EdgeInsets.fromLTRB(

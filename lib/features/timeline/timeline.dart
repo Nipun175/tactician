@@ -17,10 +17,10 @@ class TimelineScreen extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
     final args = ModalRoute.of(context)!.settings.arguments as Map;
     var tid = args['tid'];
+    // var color = args['color'];
     var size = MediaQuery.of(context).size;
     var timelineData = ref.watch(timelineDataProvider);
     var timelineDataList = [];
-
     timelineData.when(
         data: (timeline) {
           List<Timeline> timelineList = timeline.map((e) => e).toList();
@@ -34,7 +34,7 @@ class TimelineScreen extends ConsumerWidget {
         loading: () => const Center(
               child: CircularProgressIndicator(),
             ));
-    print(timelineData);
+    // print(timelineData);
     // var asynctimelineDataList = timelineDataList as AsyncValue<List<Timeline>>;
     // print(asynctimelineDataList);
     return SafeArea(
