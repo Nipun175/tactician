@@ -20,10 +20,10 @@ class RoadmapCard extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(color: Color(0xff)),
+            border: Border.all(color: Color.fromARGB(15, 125, 6, 6)),
             borderRadius: BorderRadius.circular(10),
           ),
-          height: size.height * 0.1,
+          height: size.width * 0.25,
           width: size.width * 0.25,
           child: Padding(
             padding: const EdgeInsets.all(8.0),

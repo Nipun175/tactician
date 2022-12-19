@@ -20,14 +20,14 @@ class TimelineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var cardwidth = size.width * 0.6;
-    var cardheight = size.height * 0.2;
+    var cardheight = size.height * 0.3;
     // print(image);
     if (image == "") {
       image = null;
     }
     if (image != null || image != "") {
       cardwidth = size.width * 0.75;
-      cardheight = size.height * 0.3;
+      cardheight = size.height * 0.40;
     }
 
     return TimelineTile(
@@ -81,6 +81,10 @@ class TimelineCard extends StatelessWidget {
                                 fit: BoxFit.cover,
                               )
                             : Container(),
+                        Padding(
+                          padding: EdgeInsets.only(left: size.width * 0.03,top: size.width * 0.03),
+                          child: Text(title,style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                        ),
                         Expanded(
                           child: Padding(
                             padding: EdgeInsets.only(left: size.width * 0.03),
@@ -102,7 +106,7 @@ class TimelineCard extends StatelessWidget {
                                 child: Padding(
                                   padding: EdgeInsets.fromLTRB(
                                       0,
-                                      size.width * 0.08,
+                                      size.width * 0.03,
                                       size.width * 0.08,
                                       size.width * 0.03),
                                   child: Container(
